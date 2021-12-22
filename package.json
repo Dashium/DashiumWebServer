@@ -4,7 +4,10 @@
   "description": "web server for dashium",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node main.js",
+    "setup": "npm-run-all setup:*",
+    "setup:install": "npm install",
+    "setup:start": "npm start"
   },
   "repository": {
     "type": "git",
@@ -27,6 +30,7 @@
     "finalhandler": "^1.1.2",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
+    "npm-run-all": "^4.1.5",
     "serve-index": "^1.9.1",
     "serve-static": "^1.14.2"
   }
