@@ -3,14 +3,15 @@ var http = require('http');
 var serveIndex = require('serve-index');
 var serveStatic = require('serve-static');
 const fs = require('fs');
+const config = require('./config.json');
 
-if(!fs.existsSync('www')){
-  fs.mkdirSync('www');
+if(!fs.existsSync(config.public)){
+  fs.mkdirSync(config.public);
 }
 
-var index = serveIndex('www', {'icons': true})
+var index = serveIndex(config.public, {'icons': true})
 
-var serve = serveStatic('www')
+var serve = serveStatic(config.public)
 
 var server = http.createServer(function onRequest(req, res){
   var done = finalhandler(req, res)
@@ -20,4 +21,4 @@ var server = http.createServer(function onRequest(req, res){
   })
 })
 
-server.listen(3000)
+server.listen(config.port)

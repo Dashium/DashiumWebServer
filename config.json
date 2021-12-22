@@ -1,0 +1,5 @@
+{
+    "server_name": "Dashium",
+    "port": 3000,
+    "public": "www"
+}
