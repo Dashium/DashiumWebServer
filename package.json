@@ -1,0 +1,32 @@
+{
+  "name": "dashiumwebserver",
+  "version": "1.0.0",
+  "description": "web server for dashium",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dashium/DashiumWebServer.git"
+  },
+  "keywords": [
+    "web",
+    "server",
+    "open",
+    "source",
+    "dashium"
+  ],
+  "author": "Tai Tetsuyuki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dashium/DashiumWebServer/issues"
+  },
+  "homepage": "https://github.com/Dashium/DashiumWebServer#readme",
+  "dependencies": {
+    "finalhandler": "^1.1.2",
+    "http": "^0.0.1-security",
+    "serve-index": "^1.9.1",
+    "serve-static": "^1.14.2"
+  }
+}
