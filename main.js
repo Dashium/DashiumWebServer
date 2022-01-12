@@ -29,4 +29,6 @@ io.on('connection', (socket) => {
   console.log(`Connecté au client ${socket.id}`);
 })
 
-server.listen(config.port);
+server.listen(config.port, function () {
+  console.log(`Votre app est disponible sur localhost:${config.port} !`);
+});
